@@ -1,0 +1,222 @@
+
+.dropdown {
+    width: 100%; /* Breite, z.B. 100% des Containers */
+    max-width: 500px; /* Maximale Breite */
+    height: 40px; /* Höhe des Eingabefeldes */
+    margin-top: 5px;
+    padding: 10px; /* Innenabstand für besseren Komfort */
+    font-size: 16px; /* Schriftgröße */
+    border: 2px solid black; /* Rahmenfarbe */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-sizing: border-box; /* Box-Modell für korrekte Brechnung */
+    opacity: 0.8;
+    background-color:rgb(211, 211, 211, 0.8);
+    }
+
+    .cdropdown{
+      background-color:rgb(211, 211, 211, 0.8) !important ;
+    }
+  
+  
+    input[type="number"] {
+      max-width: 500px; /* Maximale Breite */
+      height: 40px; /* Höhe des Eingabefeldes */
+      margin-top: 5px;
+      padding: 10px; /* Innenabstand für besseren Komfort */
+      font-size: 16px; /* Schriftgröße */
+      border: 2px solid black; /* Rahmenfarbe */
+      border-radius: 5px; /* Abgerundete Ecken */
+      box-sizing: border-box; /* Box-Modell für korrekte Brechnung */
+    }
+    .cFix {
+        display: flex;
+        margin-top: 5px; /* <- Das könnte fehlen! */
+        width: 100%; /* Breite, z.B. 100% des Containers */
+        height: 40px;
+        padding: 10px;
+
+        font-size: 15px;
+        border: 2px solid black;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+    .cAdd{
+      background-position: center center;
+      background-size: cover;
+      opacity: 1;
+      width: 100%; /* Breite, z.B. 100% des Containers */
+      max-width: 400px; /* Maximale Breite */
+      height: 40px; /* Höhe des Eingabefeldes */
+      margin-top: 5px;
+      font-size: 16px; /* Schriftgröße */
+      border: 2px solid black; /* Rahmenfarbe */
+      border-radius: 5px; /* Abgerundete Ecken */
+      box-sizing: border-box; /* Box-Modell für korrekte Brechnung */
+    }
+  
+
+
+  
+  .cZubehoer{
+    display: flex;
+    min-height: calc(100vh - 120px);
+    margin: 20px 0px 0px 20px;
+    float: left;
+    gap: clamp(0px, calc(5vw - 10px), 20px);    
+    align-items: left;
+    justify-content: left;
+    flex-wrap: wrap; /* WICHTIG für Umbruch */
+    }
+
+  
+    .cTextAllgemein{
+      color: #F5F5F5;
+      position: absolute;
+      display: flex;
+     }
+  
+    .cZubehoerOwn{
+      width: 300px;
+      height: auto;
+      min-height: 450px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px 10px 10px;
+      float: left;
+      margin-left: 0px;
+      background-color:rgb(211, 211, 211, 0.8);
+      border-color: black;
+      border-width: 3px;
+      border-style: solid;
+      border-radius: 5px;
+      }
+  
+      .imgFix {
+        height: 70px;
+        width: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+      }
+
+
+
+
+
+
+      
+/*Inhalt*/
+.popup3 {
+  position: absolute;
+  top: 60%;
+color: gray;
+  left: 50%;
+  width: 800px;
+  height: 1200px;
+  transform: translate(-50%, -50%);
+  background-color:rgb(211, 211, 211, 0.8);
+  padding: 20px;
+  border: 1px solid #000;
+  z-index: 999;
+  border-radius: 5px;
+  border-color: black;
+  border: 8px 8px 8px 8px;
+  overflow-y: hidden;
+}
+
+#closePopup3 {
+  color: #000000a8;
+  font-size: 20px;
+  font-style:inherit;
+  font-weight: 900;
+  line-height: normal;
+  text-align: center; 
+  border: 8px 8px 8px 8px;
+  position: absolute;
+  top: 3px;
+  left: 760px;
+  cursor: grab;
+}
+
+.textInputFix{
+  width: 83px;
+  color: rgba(0,0,0,1);
+  font-weight: Light;
+  font-size: 12px;
+  opacity: 1;
+
+  text-align: left;
+  float: left;
+  box-sizing: border-box;
+}
+
+.cextra{
+display: none;
+}
+
+.countFix{
+  float: LEFT;
+  position: ABSOLUTE;
+  font-size: 16px;
+  left: 20px;
+  top: 250px;
+}
+
+form {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-align: left; 
+  border: 2px 2px 2px 2px;
+ }
+
+/*___________________________________ZUBEHÖR_____________________________________*/
+
+/*___________________________________Warenkorb__________________________________*/
+
+/* Zubehör und Konfigurationen */
+
+.cList{
+position: static;
+font-weight: bold;
+margin-bottom: 10px;
+margin-top: 0px;
+}
+
+.extra{
+  width: 214px;
+  height: 40px;
+  position:relative;
+  left: 0px;
+  background-color:rgb(211, 211, 211, 0.8);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  overflow: hidden;
+}
+
+
+
+.configurations-container {
+  margin-top: 10px; 
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

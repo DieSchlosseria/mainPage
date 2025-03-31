@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link href="main.css" rel="stylesheet" />
+
+  <title>Warenkorb</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link href="css/toDelete.css" rel="stylesheet" />
+  <link href="css/standard.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/popUp.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/ware.css" rel="stylesheet">
+  
+  <link href="css/FrameCreator.css" rel="stylesheet" />
+
+</head>
+
+<header>
+  
+  <script> 
+    (function blockMobileUsers() {
+        if (window.innerWidth < 768 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+            document.documentElement.innerHTML = `
+                <h1 style="text-align:center; margin-top:20%; font-family:Arial;">❌ Mobile Version in Arbeit!</h1>
+                <p style="text-align:center; font-size:18px;">Wir arbeiten an einer optimierten Version für Smartphones.  
+                Bitte nutze solange einen PC-Browser.</p>
+                <p style="text-align:center; font-size:16px; font-style:italic;">– Dein Schlosseria-Team</p>
+            `;
+            setTimeout(() => { window.stop(); }, 100);
+        }
+    })();
+</script>
+
+  <div class="cHead">
+    <a href="#">
+      <img src="images/Logo.png" class="cLogo" alt="Logo">
+    </a>
+    <!-- Neuer Wrapper für das Menü -->
+    <div class="cHeadNavWrapper">
+      <div class="cHeadLine" id="menu">
+        <a class="cHome" href="index.html">Home</a>
+        <a class="cExamples" href="ProduktExamples.html">Produkte</a>
+        <a class="cWe" href="UeberUns.html">Über uns</a>
+        <a class="cAccessoires" href="accessoires.html">Accessoires</a>
+        <a class="cContact" href="Contact.html">Kontakt</a>
+      </div>
+      <!-- Hamburger Menü Button -->
+      <div class="cMenu-icon" onclick="toggleMenu()">☰</div>
+      <!-- Dropdown-Menü -->
+      <div class="cDropdown-menu" id="iDropdownMenu">
+        <a class="cHome" href="index.html">Home</a>
+        <a class="cExamples" href="ProduktExamples.html">Produkte</a>
+        <a class="cWe" href="UeberUns.html">Über uns</a>
+        <a class="cAccessoires" href="accessoires.html">Accessoires</a>
+        <a class="cContact" href="#">Kontakt</a>
+      </div>
+    </div>
+    <div class="cRight">
+      <div class="cIntroVideo"><a href="#">▷ </a> Intro-Video</div>
+      <a href="Warenkorb.html">
+        <img src="images/shopping-bag.png" class="cWare" alt="Warenkorb">
+      </a>
+    </div>
+  </div>
+  <script src="js/header/header.js"></script>
+</header>
+
+<body>
+<div class="cBody"></div>
+
+
+<div class="cWareBody">
+  <!--_________________ZUBEHÖRTEILE____________________________-->
+  <div id="myMöbel" class="cMyMöbel">
+  <h1>Deine Artikel</h1><br> 
+  <h2>Deine Accessories</h2>
+  <output id="outExtra1"> </output>
+<!--_________________KONFIGURATIONEN___________________________-->
+<!-- Hier wird der Container für die Möbelkonfigurationen dynamisch eingefügt -->
+  <h2>Deine Möbelstücke</h2>
+  <div id="accessories" class="accessories"></div>
+  <b>_________________________________________</b><br>
+  <b>Total</b>
+  <output id="iTotoal">€</output>
+  <br><br><br>
+  <button id="iClearButton" class="extra">Warenkorb löschen</button>
+</div>
+
+
+<!--________________FORMULAR____________________________________-->
+<form id="emailForm" class="cForm" method="post">
+  <label for="name">Ihr Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Max Mustermann" required><br><br>
+  
+  <label for="street">Straße:</label><br>
+  <input type="text" id="street" name="street" placeholder="Musterstraße" required><br><br>
+  
+  <label for="houseNumber">Hausnummer:</label><br>
+  <input type="text" id="houseNumber" name="houseNumber" placeholder="123" required><br><br>
+  
+  <label for="zip">Postleitzahl:</label><br>
+  <input type="text" id="zip" name="zip" placeholder="12345" required><br><br>
+  
+  <label for="city">Ort:</label><br>
+  <input type="text" id="city" name="city" placeholder="Musterstadt" required><br><br>
+
+  <label for="email">Ihre E-Mail-Adresse:</label><br>
+  <input type="email" id="email" name="email" placeholder="name@domain.com" required><br><br> 
+
+  <label for="message">Ihre Nachricht:</label><br>
+  <textarea id="message" name="message" placeholder="Ihre Nachricht" ></textarea><br><br><br>
+  
+  <button id="iSubmit" type="submit">Absenden</button>
+</form>
+</div>
+
+<footer>
+  <div class="cFooter">
+   <div class="cFooterL">
+    <div class="cFooter1">
+    <a>Sonderwunsch?</a><br><br>
+     <b>info@dieSchlosseria.de</b><br><br>
+     <a href="#">   <img src="images/pinterest.png" class="cSocialLogo"></a>
+     <a href="https://www.instagram.com/die.schlosseria/">   <img src="images/Instagram.png" class="cSocialLogo"></a>
+     <a href="#">   <img src="images/linkedIn.png" class="cSocialLogo"></a>
+     <a href="#">   <img src="images/youtube.png" class="cSocialLogo"></a><br>
+     <b class="cFooterDownL">PRODUCE YOUR OWN MEALT FRAME LOCALLY</b>
+    </div>
+   </div>
+  <div class="cFooterR">
+    <div class="cFooterRO"> 
+      <div class="cFooterR1">
+        <b>Infos</b>
+        <span>Impressum</span>
+        <span>AGB</span>
+        <span>Datenschutz</span>
+        <span>Kontakt</span>
+        <span>Hilfe</span>
+      </div>
+      <div class="cFooterR2">
+       <b>Bedingungen</b>
+       <span>Lieferbeding</span>
+       <span>Zahlungsbedingungen</span>
+       <span>Gewährleistung</span>
+       <br><br>
+      </div>
+    </div>
+    <div class="cFooterRU">
+      <div class="cFooterRU1">
+       <span>©All rights reserved Copyrights DIE.SCHLOSSERIA GBR 2025.</span>
+      </div>
+      <div class="cFooterRU2">
+        <img src="images/LogoWhite.png" class="cLogo" alt="Logo">
+       </div>
+    </div>
+   </div>      
+  </div>
+  </div>
+</footer>  
+
+<!--_____________________AUFRUFE_______________________________-->
+  <script src= "globalVariable.js"></script>
+  <script src="Warenkorb.js"></script> 
+
+</body>
+</html>

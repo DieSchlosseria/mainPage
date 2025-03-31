@@ -1,0 +1,173 @@
+
+footer{
+  position: relative;
+  min-width: 600px;
+  width: 100%;
+  background-color: #000000;
+  font-family: 'Rubik', sans-serif;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between; /* Links, Mitte und rechts werden verteilt */
+
+  height: 430px;
+  color: white;
+  min-width: 600px;
+  background-color: #555555;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+ 
+ 
+ 
+ .cFooter{
+    display: flex;
+    height: 100vh; /* Volle Höhe des Viewports */
+    gap: 0px; /* Abstand zwischen den Containern */
+  }
+
+  .cSocialLogo{
+    margin: 10px 10px 10px 0px;
+    width: 40px;
+    height: 40px;
+    }
+  
+  .cFooterL{
+    width: 40%;
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: left;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */    
+    margin: 0px 5px 5px 0px;
+    padding: 5px 5px 5px 5px;
+}
+
+   .cFooter1{
+    color: black;
+    position: absolute;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    }
+
+
+    .cFooterDownL{
+    width: 100%;
+    color: black;
+    text-align: left;
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .cFooterDown{
+      left: 1100px;
+      top: 320px;
+      color: white;
+      position: absolute;
+    }
+
+
+    .cFooterR{
+      width: 60%;
+      height: 100%;
+      display: flex;
+      color: white;
+      text-align: left;
+      flex-direction: column;
+      justify-content: center; /* Zentriert die Container-Gruppe */
+      align-items: center; /* Zentriert die Container vertikal */
+      padding-top: 20px;
+      gap: 30px;
+      background-color: #555555;
+   
+    }
+
+    .cFooterRO{
+        display: flex;
+        width: 60%;
+        text-align: left;
+        justify-content: center; /* Zentriert die Container-Gruppe */
+        align-items: center; /* Zentriert die Container vertikal */
+        gap: clamp(5px, 8vw, 500px);; /* Abstand zwischen den Containern */
+    }
+
+
+    .cFooterRU {
+      display: flex;
+      color: white;
+      width: 100%;
+      justify-content: space-between; /* Verteilte Ausrichtung */
+      align-items: center; /* Zentriert die Container vertikal */
+      flex-direction: row;
+    }
+    
+    .cFooterRU1 {
+      padding-left: clamp(10px, 8vw, 150px);
+      margin-left: auto; /* Schiebt es nach rechts, aber innerhalb des Containers */
+      margin-right: auto; /* Zentriert es horizontal */
+    }
+    
+    .cFooterRU2 {
+      margin-right: 25px; /* Verschiebt es nach rechts */
+    }
+    .cFooterR1{
+        text-align: left;
+        display: flex;
+        flex-direction: column;    
+        justify-content: flex-start; 
+        align-items: flex-start; 
+        }
+
+    .cFooterR2{
+       text-align: left;
+       display: flex;
+       flex-direction: column;    
+       justify-content: flex-start; 
+       align-items: flex-start; 
+       }
+
+        
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+            .cFooterLogo{
+                width: 100px;
+                height: 100px;
+                margin: 5px 5px 5px 5px;
+                position: absolute;
+                background-color: transparent;
+                background-size: cover;
+                }
+
+
+
+        
+
+        
+
+        

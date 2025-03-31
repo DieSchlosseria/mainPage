@@ -1,0 +1,273 @@
+
+/*_______________________DIESER_ABSCHNITT_IST_FÜR_DEN_Platizierung_USW_____________________________*/
+
+
+/* von Figma */
+
+
+  .v186_2475 {
+    width: 100%;
+    height: 1024px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+
+  .v186_2478 {
+    width: 607px;
+    height: 328px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 282px;
+    left: 488px;
+    overflow: hidden;
+  }
+  .v186_2479 {
+    width: 326px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 200px;
+    left: 00px;
+
+    font-weight: Light;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+    font-weight: 700;
+  }
+  
+
+  .v186_2483 {
+    width: 138px;
+    height: 177px;
+    background: url("../images/v186_2483.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 416px;
+    left: 208px;
+    overflow: hidden;
+  }
+  .name {
+    color: #fff;
+  }
+
+
+
+  .v186_2504 {
+    width: 210px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 500px;
+    left: 142px;
+    font-weight: Light;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v186_2505 {
+    width: 164px;
+    height: 40px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 670px;
+    left: 201px;
+    overflow: hidden;
+  }
+  .v186_2506 {
+    width: 164px;
+    height: 40px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 730px;
+    left: 201px;
+  }
+  .v186_2507 {
+    width: 164px;
+    height: 40px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 790px;
+    left: 201px;
+    overflow: hidden;
+  }
+  .v186_2508 {
+    width: 164px;
+    height: 40px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 850px;
+    left: 201px;
+    overflow: hidden;
+  }
+  .v186_2509 {
+    width: 83px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 686px;
+    left: 142px;
+    font-weight: Light;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v186_2510 {
+    width: 83px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 738px;
+    left: 142px;
+    font-weight: Light;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v186_2511 {
+    width: 83px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 798px;
+    left: 142px;
+    font-weight: Light;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v186_2512 {
+    width: 83px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 858px;
+    left: 142px;
+    font-weight: Light;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v186_2513 {
+    width: 223px;
+    height: 85px;
+    background: url("images/v186_2513.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 675px;
+    left: 689px;
+    overflow: hidden;
+  }
+  .v186_2514 {
+    width: 223px;
+    height: 85px;
+    background: rgba(222,222,222,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 3px solid rgba(0,0,0,1);
+    overflow: hidden;
+  }
+  .v186_2515 {
+    width: 205px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 31px;
+    left: 15px;
+    font-weight: Black;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .v186_2516 {
+    width: 53px;
+    height: 19px;
+    background: rgba(217,217,217,1);
+    opacity: 1;
+    position: absolute;
+    top: 51px;
+    left: 1311px;
+    border: 0px solid rgba(0,0,0,1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+  }
+  .v186_2517 {
+    width: 22px;
+    height: 12px;
+    background: url("images/v186_2517.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 55px;
+    left: 1335px;
+    overflow: hidden;
+  }
+ 
+
+
+
+
+      
+    
+
+  
+  .textDeep{
+    width: 83px;
+    color: rgba(0,0,0,1);
+    font-weight: Light;
+    font-size: 12px;
+    opacity: 1;
+    text-align: left;
+  }
+
+
+  .cSubmit{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 40px;
+    left: 1400px;
+    overflow: hidden;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*________________________für_Popup_Beispiele_____________________*/
+
+
