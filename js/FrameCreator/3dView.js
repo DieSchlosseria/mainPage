@@ -67,7 +67,7 @@ const coordinates = {
 const colorActive = 0x404040;
 const colorHover = 0x00ffff;
 const colorInactive = 0x404040;
-let opacityInactive = 0.25;
+let opacityInactive = 0;
 
 //Hilfslinien ausblenden
 let test = document.getElementById("iDisplayLine");
