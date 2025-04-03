@@ -81,13 +81,22 @@ updateAllLines();
 
 // --- Three.js Setup ---
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xf4f4f4);
+
+
+
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.05, 400);
 camera.position.set(150, 150, 150);
 camera.lookAt(0, 0, 0);
 
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer({ 
+    antialias: true, 
+    alpha: true // Transparenz für den Hintergrund aktivieren
+});
+
+scene.background = null; // Hintergrund auf transparent setzen
+renderer.setClearColor(new THREE.Color(0xf4f4f4), 1);
+
 const container = document.getElementById("canvas-container");
 container.appendChild(renderer.domElement);
 
@@ -459,7 +468,7 @@ setInterval(value, 200);
 function value() {
 
     displayed(["iFrontMiddleLenght", "iBackMiddleLenght", "iTopMiddle", "iBottomMiddle", "iMiddleMiddle"], "displayV", "flex");
-    displayed(["iFrontMiddleCross", "iBackMiddleCross"], "displayH", "flex");  
+    displayed(["iFrontMiddleCross", "iBackMiddleCross", "iRightMiddleCross", "iLeftMiddleCross"], "displayH", "flex");  
 
     //Holzplatte
     document.querySelectorAll(".cDisplayB").forEach(el => {
