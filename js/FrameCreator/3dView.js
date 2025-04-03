@@ -95,7 +95,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 scene.background = null; // Hintergrund auf transparent setzen
-renderer.setClearColor(new THREE.Color(0xf4f4f4), 1);
+renderer.setClearColor(new THREE.Color(0xf4f4f4), 0.5);
 
 const container = document.getElementById("canvas-container");
 container.appendChild(renderer.domElement);
