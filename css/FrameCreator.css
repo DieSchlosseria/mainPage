@@ -2,10 +2,12 @@
   width: 554px;
   height: 654px;
   position: relative;
+  background: transparent !important;
   display: flex;
   margin: 1px 1px 1px 1px;
 }
 canvas {
+  background: transparent !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -33,11 +35,11 @@ canvas {
 }
 
   .cInputField{
-    width: 500px;
+    position: relative;
+    width: 560px;
     height: 660px;
-    background-color: #F5F5F5;
+    background-color:rgb(211, 211, 211, 0.8) !important ;
     padding: 10px 10px 10px 5px;
-    position: static;
     padding: 5px 20px 5px 20px;
     gap: 10px;       
     color: rgba(0,0,0,1);
@@ -57,8 +59,8 @@ canvas {
   width: 560px;
   height: 660px;
   position: relative;
-  background-color: white;
   border-color: black;
+  background: transparent !important;
   border-width: 3px;
   border-style: solid;
   border-radius: 5px;
@@ -74,32 +76,52 @@ canvas {
     }
 
     svg{
-        background-color: #f5f5f5;
         display: flex;
         position: relative; /* Fixiert das SVG an einer bestimmten Position */
         opacity: 1;
         z-index: -2; /* Niedrigerer Wert als das andere Element */
+        background: transparent !important;
         }
+
+.cInputVlaue{
+  display: flex; 
+  align-items: center; 
+  gap: 5px; 
+  margin: 5px 0; 
+  font-weight: bold;
+}
+
+.cDisplayB{
+  display: flex; 
+  align-items: center; 
+  gap: 5px; 
+  margin: 5px 0; 
+  font-weight: bold;
+}
+
+
 
         .cStepAbs{
             display: flex;         /* Anordnung in einer Reihe */
             align-items: center;   /* Vertikale Zentrierung */
-            gap: 10px;            /* Abstand zwischen den Elementen */
+            gap: 20px;            /* Abstand zwischen den Elementen */
             position: absolute;    
             left: 20px;
             top: 20px;
             z-index: 6;
           }
 
-          .cStepRel{
+          .cStepAbs2{
             display: flex;         /* Anordnung in einer Reihe */
             align-items: center;   /* Vertikale Zentrierung */
-            gap: 10px;            /* Abstand zwischen den Elementen */
-            position: relative;    
+            gap: 20px;            /* Abstand zwischen den Elementen */
+            position: absolute;    
             left: 20px;
-            top: 20px;
+            bottom: 20px;
             z-index: 6;
           }
+
+
   
           .cStepNo {
             color: rgba(0,0,0,1);
@@ -272,11 +294,7 @@ position: fixed;
       min-width: 600px;
       top: 10px;
     }
-    .cInputField{
-      width: 560px;
 
-    }
-  
   }
   
  /* @media (max-width: 600px) {
