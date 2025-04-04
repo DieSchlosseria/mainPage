@@ -61,7 +61,7 @@
   .cZubehoer{
     display: flex;
     min-height: calc(100vh - 120px);
-    margin: 20px 0px 0px 20px;
+    margin: 20px 0px 50px 20px;
     float: left;
     gap: clamp(0px, calc(5vw - 10px), 20px);    
     align-items: left;

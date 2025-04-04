@@ -6,6 +6,17 @@
   display: flex;
   margin: 1px 1px 1px 1px;
 }
+
+#canvas-container-3d{
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: transparent !important;
+  display: flex;
+  margin: 1px 1px 1px 1px;
+}
+
 canvas {
   background: transparent !important;
   position: absolute;
@@ -187,6 +198,7 @@ canvas {
     font-size: 16px;
     z-index: 6;
   }
+
   .cDisplayLine {
     left: 290px;
     bottom: 20px;
@@ -195,9 +207,17 @@ canvas {
     font-size: 16px;
     z-index: 6;
   }
-  
 
-  
+    
+  .cView3D{
+    left: 290px;
+    bottom: 75px;
+    position: absolute;
+    min-width: 210px;
+    font-size: 16px;
+    z-index: 6;
+  }
+
     .cInputView {
       left: 100px;
       top: 10px;
@@ -205,16 +225,7 @@ canvas {
       opacity: 1;
       font-size: 20px;
     }
-  
-    .cView{
-      left: 210px;
-      top: 601px; 
-      display: flex; 
-      position: absolute; 
-      color: black;
-      opacity: 1.0;
-      font-size: 20px; 
-    }
+
 
     /*___________________________________Wichtig für FrameCreator __________________________________*/
     
@@ -235,7 +246,7 @@ canvas {
 }
 
 .cCube-button.cRed-button {
-    background-color: rgba(0, 162, 255, 0.11);
+    background-color: rgb(255, 0, 0);
     color: white;
     width: 10px; /* Neue Breite */
     height: 5px; /* Neue Höhe */
@@ -252,9 +263,9 @@ canvas {
 
 .cCube-line{
 
-  stroke: rgba(0, 0, 0, 0.241);
+  stroke: rgba(0, 0, 0, 1);
   stroke-width: 2;
-  --default-line-color: #808080; /* Grau als Standardfarbe */
+  --default-line-color: #c02121d7; /* Grau als Standardfarbe */
   transition: stroke-width 0.2s, stroke-dasharray 0.2s; /* Übergang auch für stroke-dasharray */
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
@@ -269,7 +280,7 @@ canvas {
   stroke-width: 6;
   stroke:  rgb(0, 0, 0);
   position: fixed;  
-  opacity: 0.5;
+  opacity: 1.0;
   z-index: -1;
 }
 
