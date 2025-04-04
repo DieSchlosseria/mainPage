@@ -65,9 +65,9 @@ const coordinates = {
 
 //Farben und style
 const colorActive = 0x404040;
-const colorHover = 0x00ffff;
 const colorInactive = 0x404040;
-let opacityInactive = 0;
+const colorHover = 0x00ffff;
+let opacityInactive = 0.3;
 
 //Hilfslinien ausblenden
 let test = document.getElementById("iDisplayLine");
@@ -85,7 +85,7 @@ const scene = new THREE.Scene();
 
 
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.05, 400);
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.05, 400); //wenn Hilfslinie ausgeblendet opacity = 0
 camera.position.set(150, 150, 150);
 camera.lookAt(0, 0, 0);
 
@@ -305,7 +305,7 @@ function updateAllLines() {
 
         line.isActive = isActive;
         line.material.color.set(isActive ? colorActive : colorInactive);
-        line.material.opacity = isActive ? 1.0 : (isActive1 ? 0.05 : opacityInactive);
+        line.material.opacity = isActive ? 1.0 : (isActive1 ? 0.0 : opacityInactive);    //Wenn Hilfslinien ausgeblendet Opacity = 0.0
         line.renderOrder = isActive ? 2 : 1; // Höhere Render Order für aktive Linien
   //     line.material.depthTest = !isActive;
     //    line.material.depthWrite = false;
