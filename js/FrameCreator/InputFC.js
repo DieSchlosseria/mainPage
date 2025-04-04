@@ -257,6 +257,8 @@ if (addedBoard) {
   TotalWood = 0;
 }
 
+TotalWood = Math.round(TotalWood);
+
 Total = TotalWood + TotalFrame;
 
 //_________________AUSGABEWERTE____________________
