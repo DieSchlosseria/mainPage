@@ -77,6 +77,12 @@
     </span>
     <div id="canvas-container"></div>
 
+
+  <a href="3dView.html">
+      <button class="cView3D">3D Ansicht</button>
+  </a>
+
+
   <button class="cAddBoard" id="iAddBoard" >Holzplatte hinzufügen</button>
   <button class="cDisplayLine" id="iDisplayLine" >Hilfslinien ausblenden</button>
   <img src="images/trash.png" class="cTrash" id="iTrash" alt="Warenkorb">
@@ -212,22 +218,10 @@
       </div>
   </footer>  
   
-
-
-
-
-
-
-
-
-
-
-
-
    <!--___________________POPUP_____________________-->
    <div class="cOverlay" id="popupOverlay">
    <div class="cPopup" id="popupContent" >
-   <button class="cCloseButton" id="iClosePopup">X</button>
+   <button class="cClosePopup" id="iClosePopup">X</button>
    <h4 class="cPopupHeadline">Warenkorb</h4><br><br>
    <h4 class="cLetter2"> Maße:    </h4>
    <output id="outDim"></output><br><br>
