@@ -378,6 +378,7 @@ function FuncClear() {
 // Alle Werte in tButtonStates auf false setzen
 lineKeys.forEach((key) => {
 tButtonStates[key] = false;
+localStorage.setItem("iAddBoard", false);
 });
 
 //Defaultwerte setzen
