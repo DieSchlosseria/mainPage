@@ -66,7 +66,7 @@ if ( localStorage.getItem("iAddBoard") === "true") {
 //Farben und style
 const colorActive = 0x404040;
 const colorInactive = 0x404040;
-const colorHover = 0x00ffff;
+const colorHover = 0x404040;
 let opacityInactive = 0.0;
 
 const isActive = false;
