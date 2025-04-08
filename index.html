@@ -70,7 +70,11 @@
 <body>
   <div class="cBody"></div>
   <div class ="cFrame">
-  <div class="cHoover">
+  <div class="cHoover" onmouseenter="hideImage()" onmouseleave="showImage()">
+
+<!-- <img id="hoverImage" class="cHover-Image" src="video/msedge_UWP9y7LiOn.mp4" alt="Vorschau">        -->
+  <video id="hoverImage" class="cHover-Image" src="video/msedge_V1.mp4" autoplay muted loop playsinline></video>
+
     <span class = "cStepAbs">
       <span class = "cStepNo">1.</span>
       <span class="cStepText">Klicke auf die zu erstellende Linien: </span>
@@ -86,6 +90,18 @@
   <button class="cDisplayLine" id="iDisplayLine" >Hilfslinien ausblenden</button>
   <img src="images/trash.png" class="cTrash" id="iTrash" alt="Warenkorb">
   </div>
+
+ 
+
+
+
+
+
+
+
+
+
+
   
   <!--EINGABE der Maße-->
   <div class="cInputField">
@@ -246,7 +262,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="js/controls/OrbitControls.js"></script> 
 <script src="js/FrameCreator/3dView.js"></script>
-
+<script src="js/FrameCreator/videoHoover.js"></script>
   
   </div>
   
