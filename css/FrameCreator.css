@@ -65,6 +65,10 @@ canvas {
     justify-content: center;
     align-items: center;
   }
+
+
+
+
   
   .cHoover{
   width: 560px;
@@ -79,6 +83,17 @@ canvas {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  }
+
+  .cHover-Image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Passt sich der Breite von cHoover an */
+    height: 100%; /* Passt sich der Höhe von cHoover an */
+    z-index: 100;
+    display: none; /* initial versteckt */
+    pointer-events: none; /* verhindert, dass die Maus das Bild blockiert */
   }
 
   #iHoverButton {
@@ -230,6 +245,10 @@ canvas {
       opacity: 1;
       font-size: 20px;
     }
+
+
+
+
 
 
     /*___________________________________Wichtig für FrameCreator __________________________________*/
