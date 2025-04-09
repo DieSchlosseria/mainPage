@@ -63,6 +63,8 @@ const coordinates = {
   });
 
 
+
+
 //Farben und style
 const colorActive = 0x404040;
 const colorInactive = 0x404040;
@@ -490,13 +492,16 @@ function value() {
 }
 
 //Seite neu laden
-window.onload = function() {
-if ( localStorage.getItem("iAddBoard") === "true") {
-    addedBoard = true;
-  } else {
-    addedBoard = false;
-  }
-    };
+    window.addEventListener("load", function () {
+        console.log("Seite komplett geladen");
+        if ( localStorage.getItem("iAddBoard") === "true") {
+            addedBoard = true;
+          } else {
+            addedBoard = false;
+          }
+
+          resetScene(); // Aktualisiert alle Linien basierend auf dem neuen Status
+      });
 
 
 //Ein/Ausblenden
