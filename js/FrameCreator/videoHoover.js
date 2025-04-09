@@ -50,37 +50,17 @@ function showImage() {
 
 // Maus betritt das Video → ausblenden
 function onImageMouseEnter() {
+  console.log("hoover");
   hideImage();
 }
 
 // Maus verlässt das Video → TEST-Phase starten
 function onImageMouseLeave() {
-  if (showPreview) {
-    startTestLoggingAndHideVideo();
-  }
+  startTestLoggingAndHideVideo();
 }
-
-// Regelmäßiger Check auf buttonStates
-setInterval(() => {
-  const tButtonStates = JSON.parse(localStorage.getItem("buttonStates")) || {};
-  const active = Object.values(tButtonStates).some(val => val === true || val === 1 || val === "1");
-  const newShowPreview = !active;
-
-  if (newShowPreview && !showPreview) {
-    startTestLoggingAndHideVideo();
-  }
-
-  showPreview = newShowPreview;
-
-  console.log("showPreview:", showPreview);
-}, 500);
 
 // Seite wird geladen
 window.onload = function () {
-  const tButtonStates = JSON.parse(localStorage.getItem("buttonStates")) || {};
-  const active = Object.values(tButtonStates).some(val => val === true || val === 1 || val === "1");
-  showPreview = !active;
-
   // Maus-Events setzen
   const video = document.getElementById("hoverImage");
   if (video) {
@@ -88,7 +68,30 @@ window.onload = function () {
     video.addEventListener("mouseleave", onImageMouseLeave);
   }
 
+  // Initialer Zustand für showPreview
+  const tButtonStates = JSON.parse(localStorage.getItem("buttonStates")) || {};
+  const active = Object.values(tButtonStates).some(val => val === true || val === 1 || val === "1");
+  showPreview = !active;
+
+  // Wenn showPreview wahr ist, wird der Test direkt gestartet
   if (showPreview) {
     startTestLoggingAndHideVideo();
   }
 };
+
+// Regelmäßiger Check auf buttonStates
+setInterval(() => {
+  const tButtonStates = JSON.parse(localStorage.getItem("buttonStates")) || {};
+  const active = Object.values(tButtonStates).some(val => val === true || val === 1 || val === "1");
+  const newShowPreview = !active;
+
+  // Nur bei Änderung den Zustand anpassen
+  if (newShowPreview !== showPreview) {
+    showPreview = newShowPreview;
+    console.log("showPreview:", showPreview);
+
+    if (showPreview) {
+      startTestLoggingAndHideVideo();
+    }
+  }
+}, 500);
