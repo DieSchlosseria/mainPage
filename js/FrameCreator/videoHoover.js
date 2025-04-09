@@ -1,73 +1,48 @@
 let showPreview;
-let testLoggingInterval = null;
 let testLoggingTimeout = null;
-
-// Funktion: 5 Sekunden lang TEST ausführen und Video ausblenden
-function startTestLoggingAndHideVideo() {
-  if (testLoggingInterval !== null) return; // Schon aktiv
-
-  console.log("Starte TEST-Phase...");
-
-  // Video ausblenden
-  hideImage();
-
-  // TEST-Intervall
-  testLoggingInterval = setInterval(() => {
-    console.log("TEST");
-  }, 500);
-
-  // Nach 5 Sekunden stoppen
-  testLoggingTimeout = setTimeout(() => {
-    clearInterval(testLoggingInterval);
-    testLoggingInterval = null;
-    console.log("TEST-Phase beendet");
-
-    if (showPreview) {
-      showImage();
-    }
-  }, 5000);
-}
 
 // Funktion zum Ausblenden des Videos
 function hideImage() {
+  console.log("hide");
   const video = document.getElementById("hoverImage");
   if (video) {
     video.pause();
-    video.style.display = "none";
+    video.style.display = "none"; // Video ausblenden
   }
 }
 
-// Funktion zum Anzeigen des Videos
+// Funktion zum Anzeigen des Videos mit 5 Sekunden Verzögerung
 function showImage() {
-  if (showPreview && testLoggingInterval === null) {
-    const video = document.getElementById("hoverImage");
-    if (video) {
-      video.style.display = "block";
-      video.play();
+  console.log("Verzögertes Anzeigen des Videos nach 5 Sekunden...");
+  setTimeout(() => {
+    if (showPreview) {
+      const video = document.getElementById("hoverImage");
+      if (video) {
+        video.style.display = "block"; // Video anzeigen
+        video.play();
+      }
     }
-  }
+  }, 5000); // Verzögerung von 5 Sekunden
 }
 
 // Maus betritt das Video → ausblenden
 function onImageMouseEnter() {
-  console.log("hoover");
+  console.log("hover");
   hideImage();
 }
 
 // Maus verlässt das Video → TEST-Phase starten
 function onImageMouseLeave() {
-  startTestLoggingAndHideVideo();
+  // Wenn der Timer bereits läuft, wird er gestoppt und neu gestartet
+  if (testLoggingTimeout) {
+    clearTimeout(testLoggingTimeout);
+    console.log("Timer neu gestartet");
+  }
+  showImage(); // Startet die Verzögerung und zeigt das Video an
 }
 
 // Seite wird geladen
 window.onload = function () {
-  // Maus-Events setzen
-  const video = document.getElementById("hoverImage");
-  if (video) {
-    video.addEventListener("mouseenter", onImageMouseEnter);
-    video.addEventListener("mouseleave", onImageMouseLeave);
-  }
-
   // Initialer Zustand für showPreview
   const tButtonStates = JSON.parse(localStorage.getItem("buttonStates")) || {};
   const active = Object.values(tButtonStates).some(val => val === true || val === 1 || val === "1");
@@ -75,7 +50,14 @@ window.onload = function () {
 
   // Wenn showPreview wahr ist, wird der Test direkt gestartet
   if (showPreview) {
-    startTestLoggingAndHideVideo();
+    showImage();
+  }
+
+  // Video-Element holen und Maus-Events setzen
+  const video = document.getElementById("hoverImage");
+  if (video) {
+    video.addEventListener("mouseenter", onImageMouseEnter);
+    video.addEventListener("mouseleave", onImageMouseLeave);
   }
 };
 
@@ -91,7 +73,7 @@ setInterval(() => {
     console.log("showPreview:", showPreview);
 
     if (showPreview) {
-      startTestLoggingAndHideVideo();
+      showImage(); // Wenn showPreview wahr ist, Video sofort anzeigen
     }
   }
 }, 500);
