@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="images/Logo.png" type="image/png">
+<link href="css/toDelete.css" rel="stylesheet" />
+<link href="css/standard.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/popUp.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+
+<link href="css/landing.css" rel="stylesheet">
+
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <title>FrameCreator</title>
+  </a>
+</head>
+<header>
+  
+  <script> 
+    (function blockMobileUsers() {
+        if (window.innerWidth < 768 || /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+            document.documentElement.innerHTML = `
+                <h1 style="text-align:center; margin-top:20%; font-family:Arial;">❌ Mobile Version in Arbeit!</h1>
+                <p style="text-align:center; font-size:18px;">Wir arbeiten an einer optimierten Version für Smartphones.  
+                Bitte nutze solange einen PC-Browser.</p>
+                <p style="text-align:center; font-size:16px; font-style:italic;">– Dein Schlosseria-Team</p>
+            `;
+            setTimeout(() => { window.stop(); }, 100);
+        }
+    })();
+</script>
+
+  <div class="cHead">
+    <a href="index.html">
+      <img src="images/Logo.png" class="cLogo" alt="Logo">
+    </a>
+    <!-- Neuer Wrapper für das Menü -->
+    <div class="cHeadNavWrapper">
+      <div class="cHeadLine" id="menu">
+        <a class="cHome">Home</a>
+        <a class="cHome" href="index.html">Creator</a>
+        <a class="cExamples" href="ProduktExamples.html">Produkte</a>
+        <a class="cWe" href="UeberUns.html">Über uns</a>
+        <a class="cAccessoires" href="accessoires.html">Accessoires</a>
+        <a class="cContact" href="Contact.html">Kontakt</a>
+      </div>
+      <!-- Hamburger Menü Button -->
+      <div class="cMenu-icon" onclick="toggleMenu()">☰</div>
+      <!-- Dropdown-Menü -->
+      <div class="cDropdown-menu" id="iDropdownMenu">
+        <a class="cHome" href="landingPage.html">Home</a>
+        <a class="cHome" href="index.html">Home</a>
+        <a class="cExamples" href="ProduktExamples.html">Produkte</a>
+        <a class="cWe" href="UeberUns.html">Über uns</a>
+        <a class="cAccessoires" href="accessoires.html">Accessoires</a>
+        <a class="cContact" href="Contact.html">Kontakt</a>
+      </div>
+    </div>
+    <div class="cRight">
+      <div class="cIntroVideo"><a href="#">▷ </a> Intro-Video</div>
+      <a href="Warenkorb.html">
+        <img src="images/shopping-bag.png" class="cWare" alt="Warenkorb">
+      </a>
+    </div>
+  </div>
+  <script src="js/header/header.js"></script>
+</header>
+
+
+</head>
+<body>
+<div class="cBody"></div>
+<div class="cBodyLandingPage">
+
+
+<h1>DIE.SCHLOSSERIA </h1>
+<h1>Stahl manufactur aus dem Chiemgau</h1> 
+
+<div class="slider-container">
+  <div class="slider-inner" id="slider">
+    <div class="slide">
+    <h2>KREIERE DEIN EIGENES STAHLMÖBEL</h2>
+    <div style="text-align: start;">
+        <ul style="list-style-type: disc; list-style-position: inside; margin: 0; padding: 0;">
+        <li style="list-style-position: inside;">Streben wählen</li>
+        <li style="list-style-position: inside;">Maße anpassen</li>
+        <li style="list-style-position: inside;">vielleicht noch eine Holzplatte dazu?</li>
+        <li style="list-style-position: inside;">Und Ab zum Bestellen</li>
+    </ul><br><br>
+    <a href="index.html">
+     <h3 style="border-width: 5px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zum Creator</h3>
+    </a>      
+    </div>
+    </div>
+
+
+    <div class="slide">
+    <h2>ODER LASS DICH INSPIRIEREN</h2>
+    <div style="text-align: start;">
+    <ul style="list-style-type: disc; list-style-position: inside; margin: 0; padding: 0;">
+        <li style="list-style-position: inside;">Wunsch-MöbeL auswählen</li>
+        <li style="list-style-position: inside;">im Creator anpassen</li>
+        <li style="list-style-position: inside;">Und Ab zum Bestellen</li>
+    </ul><br><br>
+    <a href="ProduktExamples.html">
+     <h3 style="border-width: 5px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zu den Produktbeispiele</h3>
+    </a>
+    </div>
+    </div>
+
+  </div>
+  <div class="dots">
+    <div class="dot active" onclick="goToSlide(0)"></div>
+    <div class="dot" onclick="goToSlide(1)"></div>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+  const slider = document.getElementById('slider');
+  const dots = document.querySelectorAll('.dot');
+
+  function goToSlide(index) {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+</script>
+
+</body>
+</html>
