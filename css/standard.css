@@ -40,6 +40,21 @@ overflow-x: hidden;
   flex-wrap: wrap;
 }
 
+.cBody2{
+width: 100vw;
+height: 100vh;
+
+  position: absolute;
+  background: url("../images/LandingImg.png") center/cover no-repeat;
+  background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
+  background-position: center center; /* Zentriert das Bild */
+  background-size: cover; 
+  margin: 0px;
+  top: 120px;
+  z-index: -3; /* Niedrigerer Wert als das andere Element */
+  flex-wrap: wrap;
+}
+
 header {
   width: 100%;
   min-width: 600px;

@@ -11,10 +11,10 @@
 .slider-container {
     position: relative;
     display: flex;
-    width: 80%;
+    width: 40%;
     height: 500px;
     overflow: hidden;
-    background-color:rgb(211, 211, 211, 0.5);
+    background-color:rgb(211, 211, 211, 0.3);
     border: 5px;
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
