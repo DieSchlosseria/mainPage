@@ -1,6 +1,6 @@
 const video = document.getElementById("hoverImage");
 let showVideo = true;
-const delayShowVideo = 2000;
+const delayShowVideo = 3000;
 
 
 
