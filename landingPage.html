@@ -92,7 +92,7 @@
         <li style="list-style-position: inside;">Und ab zum Bestellen</li>
     </ul><br><br>
     <a href="index.html">
-     <h3 style="border-width: 5px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zum Creator</h3>
+     <h3 style="border-width: 2px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zum Creator</h3>
     </a>      
     </div>
     </div>
@@ -107,7 +107,7 @@
         <li style="list-style-position: inside;">Und ab zum Bestellen</li>
     </ul><br><br>
     <a href="ProduktExamples.html">
-     <h3 style="border-width: 5px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zu den Produktbeispiele</h3>
+     <h3 style="border-width: 2px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zu den Produktbeispiele</h3>
     </a>
     </div>
     </div>
@@ -173,11 +173,19 @@
     let currentIndex = 0;
     const totalSlides = dots.length;
   
+    let slideInterval;
+  
     function goToSlide(index) {
       slider.style.transform = `translateX(-${index * 100}%)`;
       dots.forEach(dot => dot.classList.remove('active'));
       dots[index].classList.add('active');
       currentIndex = index;
+  
+      // Speicher den Index im localStorage
+      localStorage.setItem("currentSlideIndex", index);
+  
+      // Reset Interval
+      resetInterval();
     }
   
     function nextSlide() {
@@ -185,8 +193,18 @@
       goToSlide(nextIndex);
     }
   
-    // Automatischer Slidewechsel alle X Sekunden
-    setInterval(nextSlide, 7000);
+    function resetInterval() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 7000);
+    }
+  
+    // Initialisierung bei Seitenaufruf
+    window.addEventListener("load", () => {
+      // Versuche, vorherigen Index aus dem localStorage zu laden
+      const savedIndex = parseInt(localStorage.getItem("currentSlideIndex")) || 0;
+      goToSlide(savedIndex);
+      resetInterval();
+    });
   </script>
 
 </body>
