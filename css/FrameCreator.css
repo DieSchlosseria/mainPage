@@ -186,9 +186,9 @@ canvas {
   
           .cTrash{
             left: 20px;
-            top: 530px;
-            width: 33px;
-            height: 40px;
+            top: 505px;
+            width: 65px;
+            height: 65px;
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
