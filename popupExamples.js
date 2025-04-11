@@ -210,7 +210,7 @@ function initializeIds() {
       if (element) {
         element.addEventListener("click", () => {
           localStorage.setItem(id, "true");
-           window.location.href = 'index.html';
+           window.location.href = 'creator.html';
 
           productConfigurations.forEach(config => {
             const isActive = config.ids.some(id => localStorage.getItem(id) === "true");
