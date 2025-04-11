@@ -9,7 +9,8 @@
 <link href="css/popUp.css" rel="stylesheet">
 <link href="css/footer.css" rel="stylesheet">
 
-<link href="css/FrameCreator.css" rel="stylesheet" />
+<link href="css/landing.css" rel="stylesheet">
+
 
   <meta name="robots" content="noindex, nofollow">
   <meta charset="UTF-8">
@@ -40,8 +41,8 @@
     <!-- Neuer Wrapper für das Menü -->
     <div class="cHeadNavWrapper">
       <div class="cHeadLine" id="menu">
-        <a class="cHome" href="landingPage.html">Home</a>
-        <a class="cHome">Creator</a>
+        <a class="cHome">Home</a>
+        <a class="cHome" href="Creator.html">Creator</a>
         <a class="cExamples" href="ProduktExamples.html">Produkte</a>
         <a class="cWe" href="UeberUns.html">Über uns</a>
         <a class="cAccessoires" href="accessoires.html">Accessoires</a>
@@ -51,8 +52,8 @@
       <div class="cMenu-icon" onclick="toggleMenu()">☰</div>
       <!-- Dropdown-Menü -->
       <div class="cDropdown-menu" id="iDropdownMenu">
-        <a class="cHome" href="landingPage.html">Home</a>
-        <a class="cHome" href="index.html">Creator</a>
+        <a class="cHome" href="index.html">Home</a>
+        <a class="cHome" href="Creator.html">Creator</a>
         <a class="cExamples" href="ProduktExamples.html">Produkte</a>
         <a class="cWe" href="UeberUns.html">Über uns</a>
         <a class="cAccessoires" href="accessoires.html">Accessoires</a>
@@ -69,211 +70,156 @@
   <script src="js/header/header.js"></script>
 </header>
 
+
+</head>
 <body>
-  <div class="cBody"></div>
-  <div class ="cFrame">
-  <div class="cHoover" onmouseenter="hideImage()" onmouseleave="showImage()">
-
-<!-- <img id="hoverImage" class="cHover-Image" src="video/msedge_UWP9y7LiOn.mp4" alt="Vorschau">        -->
-  <video id="hoverImage" class="cHover-Image" src="video/msedge_V1.mp4" autoplay muted loop playsinline></video>
+<div class="cBody2"></div>
+<div class="cBodyLandingPage">
 
 
+<h1>DIE.SCHLOSSERIA </h1>
+<h3>Stahlmanufactur aus dem Chiemgau</h3> 
+
+<div class="slider-container">
+  <div class="slider-inner" id="slider">
+    <div class="slide">
+    <h3>KREIERE DEIN EIGENES STAHLMÖBEL</h3><br>
+    <div style="text-align: start;">
+        <ul style="list-style-type: disc; list-style-position: inside; margin: 0; padding: 0;">
+        <li style="list-style-position: inside;">Streben wählen</li>
+        <li style="list-style-position: inside;">Maße anpassen</li>
+        <li style="list-style-position: inside;">vielleicht noch eine Holzplatte dazu?</li>
+        <li style="list-style-position: inside;">Und ab zum Bestellen</li>
+    </ul><br><br>
+    <a href="index.html">
+     <h3 style="border-width: 2px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zum Creator</h3>
+    </a>      
+    </div>
+    </div>
 
 
-  
-    <span class = "cStepAbs">
-      <span class = "cStepNo">1.</span>
-      <span class="cStepText">Klicke auf die zu erstellende Linien: </span>
-    </span>
-    <div id="canvas-container"></div>
+    <div class="slide">
+    <h3>ODER LASS DICH INSPIRIEREN</h3><br>
+    <div style="text-align: start;">
+    <ul style="list-style-type: disc; list-style-position: inside; margin: 0; padding: 0;">
+        <li style="list-style-position: inside;">Wunsch-Möbel auswählen</li>
+        <li style="list-style-position: inside;">im Creator anpassen</li>
+        <li style="list-style-position: inside;">Und ab zum Bestellen</li>
+    </ul><br><br>
+    <a href="ProduktExamples.html">
+     <h3 style="border-width: 2px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zu den Produktbeispiele</h3>
+    </a>
+    </div>
+    </div>
 
-
-    <button class="cView3D" onclick="window.location.href='3dView.html'">
-      3D Ansicht
-    </button>
-
-  <button class="cAddBoard" id="iAddBoard" >Holzplatte hinzufügen</button>
-  <button class="cDisplayLine" id="iDisplayLine" >Hilfslinien ausblenden</button>
-  <img src="images/trash_V2.png" class="cTrash" id="iTrash" alt="Warenkorb">
-  </div>
-
- 
-
-
-
-
-
-
-
-
-
-
-  
-  <!--EINGABE der Maße-->
-  <div class="cInputField">
-    <span class = "cStepAbs">
-    <span class = "cStepNo">2.</span>
-    <span class = "cStepText">Maße auswählen:</span>
-    </span>
-    <br><br><br>
-    <div style="min-height: 458; margin-top: 10px; display: flex; flex-direction: column; gap: 15px;">
-  
-  <!--__________________________Eingabefelder_Maße_________________________________________-->
-  <!--Materialstärke-->
-  <div class ="cInputVlaue">
-    <label for="iMaterial" style="width: 100px; min-width: 110px;">Material</label>
-    <input type="range" name="material" class="cInput" min="10" max="50" step="5" id="iMaterial" style="flex: 1;">
-    <output name="materialOutput" id="iMaterialOutput" style="width: 50px; text-align: right;" >15</output>
-    <span>mm</span>
-  </div>
-  <!--Höhe-->
-  <div class ="cInputVlaue">
-    <label for="iHight" style="width: 100px; min-width: 110px">Höhe</label>
-    <input type="range" name="hight" class="cInput" min="10" max="200" step="10" id="iHight" style="flex: 1;">
-    <output name="hightOutput" id="iHightOutput" style="width: 50px; text-align: right;">100</output>
-    <span>cm</span>
-  </div>
-  <!--Breite-->
-  <div class ="cInputVlaue">
-    <label for="iWidth" style="width: 100px; min-width: 110px">Breite</label>
-    <input type="range" name="width" class="cInput" value="150" min="10" max="200" step="5" id="iWidth" style="flex: 1;">
-    <output name="widthOutput" id="iWidthOutput" style="width: 50px; text-align: right;">100</output>
-    <span>cm</span>
-  </div>
-  <!--Tiefe-->
-  <div class ="cInputVlaue">
-    <label for="iDeepth" style="width: 100px; min-width: 110px">Tiefe</label>
-    <input type="range" name="deepth" class="cInput" min="10" max="200" step="5" id="iDeepth" style="flex: 1;">
-    <output name="deepthOutput" id="iDeepthOutput" style="width: 50px; text-align: right;">100</output>
-    <span>cm</span>
-  </div>
-  <!--Mitte V-->
-  <div  class ="cInputVlaue" id="displayV">
-    <label for="iMiddleV" style="width: 100px; min-width: 110px">Mitte v</label>
-    <input type="range" name="middleV" class="cInput" min="5" max="200" step="5" id="iMiddleV" style="flex: 1;">
-    <output name="middleVOutput" id="iMiddleVOutput" style="width: 50px; text-align: right;">100</output>
-    <span>cm</span>
-  </div>
-  <!--Mitte H-->
-  <div  class ="cInputVlaue" id="displayH">
-    <label for="iMiddleH" style="width: 100px; min-width: 110px">Mitte h</label>
-    <input type="range" name="middleH" class="cInput" min="5" max="200" step="5" id="iMiddleH" style="flex: 1;">
-    <output name="middleHOutput" id="iMiddleHOutput" style="width: 50px; text-align: right;">100</output>
-    <span>cm</span>
-  </div><br><br>
-  <!--Holzplatte überstand links/rechts-->
-  <b class="cDisplayB">Holzplatte Überstand</b>
-  <div id="displayB1" class="cDisplayB">
-    <label for="iOversetLeRi" style="width: 100px; min-width: 110px">links/rechts</label>
-    <input type="range" name="OversetLeRi" class="cInput" min="0" max="50" step="5" id="iOversetLeRi" style="flex: 1;">
-    <output name="OversetLeRiOutput" id="iOversetLeRiOutput" style="width: 50px; text-align: right;">0</output>
-    <span>cm</span>
-  </div>
-  <!--Holzplatte überstand vorne/hinten-->
-  <div id="displayB2" class="cDisplayB">
-    <label for="iOversetFoBa" style="width: 100px; min-width: 110px">vorne/hinten</label>
-    <input type="range" name="OversetFoBa" class="cInput" min="0" max="50" step="5" id="iOversetFoBa" style="flex: 1;">
-    <output name="OversetFoBaOutput" id="iOversetFoBaOutput" style="width: 50px; text-align: right;">0</output>
-    <span>cm</span>
-  </div>
-  
-  </div>
-  <span class = "cStepAbs2">
-  <span class = "cStepNo"> 3.</span>
-  <button class="cSubmitSub" id="iShowPopup">Zum Warenkorb hinzufügen</button>
-  </span>
-  </div>
-  </div>
-    <!-- Button der in der Nähe der Linien angezeigt wird -->
-  <button id="iHoverButton" class="cCube-button cRed-button">  Add  </button>
-  
-
-
-
-
-
-
-
-
-  <footer>
-      <div class="cFooter">
-       <div class="cFooterL">
-        <div class="cFooter1">
-        <a>Sonderwunsch?</a><br><br>
-         <b>info@dieSchlosseria.de</b><br><br>
-         <a href="#">   <img src="images/pinterest.png" class="cSocialLogo"></a>
-         <a href="https://www.instagram.com/die.schlosseria/">   <img src="images/Instagram.png" class="cSocialLogo"></a>
-         <a href="#">   <img src="images/linkedIn.png" class="cSocialLogo"></a>
-         <a href="#">   <img src="images/youtube.png" class="cSocialLogo"></a><br>
-         <b class="cFooterDownL">PRODUCE YOUR OWN MEALT FRAME LOCALLY</b>
-        </div>
-       </div>
-      <div class="cFooterR">
-        <div class="cFooterRO"> 
-          <div class="cFooterR1">
-            <b>Infos</b>
-            <span>Impressum</span>
-            <span>AGB</span>
-            <span>Datenschutz</span>
-            <span>Kontakt</span>
-            <span>Hilfe</span>
-          </div>
-          <div class="cFooterR2">
-           <b>Bedingungen</b>
-           <span>Lieferbeding</span>
-           <span>Zahlungsbedingungen</span>
-           <span>Gewährleistung</span>
-           <br><br>
-          </div>
-        </div>
-        <div class="cFooterRU">
-          <div class="cFooterRU1">
-           <span>©All rights reserved Copyrights DIE.SCHLOSSERIA GBR 2025.</span>
-          </div>
-          <div class="cFooterRU2">
-            <img src="images/LogoWhite.png" class="cLogo" alt="Logo">
-           </div>
-        </div>
-       </div>      
+    <div class="slide">
+      <h3>SCHAU DOCH MAL ZU UNSEREN ACCESOIRES</h3><br>
+      <div style="text-align: start;">
+      <ul style="list-style-type: disc; list-style-position: inside; margin: 0; padding: 0;">
+          <li style="list-style-position: inside;">...</li>
+          <li style="list-style-position: inside;">...</li>
+          <li style="list-style-position: inside;">...</li>
+      </ul><br><br>
+      <a href="accessoires.html">
+       <h3 style="border-width: 2px; border-color: black;  border-style: solid; background-color: white; font-size: 15px; padding: 5px 5px 5px 5px; margin-left: 20px; color:rgb(48, 94, 94);">zu den Accesoires</h3>
+      </a>
       </div>
       </div>
-  </footer>  
-  
-   <!--___________________POPUP_____________________-->
-   <div class="cOverlay" id="popupOverlay">
-   <div class="cPopup" id="popupContent" >
-   <button class="cClosePopup" id="iClosePopup">X</button>
-   <h4 class="cPopupHeadline">Warenkorb</h4><br><br>
-   <h4 class="cLetter2"> Maße:    </h4>
-   <output id="outDim"></output><br><br>
-  
-   <h4 class="cLetter2"> Total Rahmen:   </h4>
-   <output id="outTotalWare"></output><br><br>
-   <h4 class="cLetter2">Total Holz:</h4>
-   <output id="outTotalWood"></output><br><br>
-   <h4 class="cLetter2">Versand</h4>
-   <output id="outTotalDel"></output><br><br>
-   <h4 class="cLetter2"> Lieferung:   </h4>
-   <output id="outDeliv"></output><br><br>
-   <!--<h4 class="Letter2"> Anzahl Zubehör ges:   </h4>
-   <output id="outExtra"></output>-->
-   <button id="iAdd"> hinzufügen </button>
-  
-   </div>
-  </div>
-  
-  <script src="js/FrameCreator/InputFC.js"></script>
-  <script src="js/FrameCreator/PopUpFC.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="js/controls/OrbitControls.js"></script> 
-<script src="js/FrameCreator/3dView.js"></script>
-<script src="js/FrameCreator/videoHoover.js"></script>
-  
   </div>
-  
+  <div class="dots">
+    <div class="dot active" onclick="goToSlide(0)"></div>
+    <div class="dot" onclick="goToSlide(1)"></div>
+  </div>
+</div>
 
+</div>
+
+<footer style="margin-top: 100px;">
+    <div class="cFooter">
+     <div class="cFooterL">
+      <div class="cFooter1">
+      <a>Sonderwunsch?</a><br><br>
+       <b>info@dieSchlosseria.de</b><br><br>
+       <a href="#">   <img src="images/pinterest.png" class="cSocialLogo"></a>
+       <a href="https://www.instagram.com/die.schlosseria/">   <img src="images/Instagram.png" class="cSocialLogo"></a>
+       <a href="#">   <img src="images/linkedIn.png" class="cSocialLogo"></a>
+       <a href="#">   <img src="images/youtube.png" class="cSocialLogo"></a><br>
+       <b class="cFooterDownL">PRODUCE YOUR OWN MEALT FRAME LOCALLY</b>
+      </div>
+     </div>
+    <div class="cFooterR">
+      <div class="cFooterRO"> 
+        <div class="cFooterR1">
+          <b>Infos</b>
+          <span>Impressum</span>
+          <span>AGB</span>
+          <span>Datenschutz</span>
+          <span>Kontakt</span>
+          <span>Hilfe</span>
+        </div>
+        <div class="cFooterR2">
+         <b>Bedingungen</b>
+         <span>Lieferbeding</span>
+         <span>Zahlungsbedingungen</span>
+         <span>Gewährleistung</span>
+         <br><br>
+        </div>
+      </div>
+      <div class="cFooterRU">
+        <div class="cFooterRU1">
+         <span>©All rights reserved Copyrights DIE.SCHLOSSERIA GBR 2025.</span>
+        </div>
+        <div class="cFooterRU2">
+          <img src="images/LogoWhite.png" class="cLogo" alt="Logo">
+         </div>
+      </div>
+     </div>      
+    </div>
+    </div>
+</footer>  
+
+
+
+<script>
+    const slider = document.getElementById('slider');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+    const totalSlides = dots.length;
+  
+    let slideInterval;
+  
+    function goToSlide(index) {
+      slider.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+      currentIndex = index;
+  
+      // Speicher den Index im localStorage
+      localStorage.setItem("currentSlideIndex", index);
+  
+      // Reset Interval
+      resetInterval();
+    }
+  
+    function nextSlide() {
+      const nextIndex = (currentIndex + 1) % totalSlides;
+      goToSlide(nextIndex);
+    }
+  
+    function resetInterval() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 7000);
+    }
+  
+    // Initialisierung bei Seitenaufruf
+    window.addEventListener("load", () => {
+      // Versuche, vorherigen Index aus dem localStorage zu laden
+      const savedIndex = parseInt(localStorage.getItem("currentSlideIndex")) || 0;
+      goToSlide(savedIndex);
+      resetInterval();
+    });
+  </script>
 
 </body>
-
 </html>
