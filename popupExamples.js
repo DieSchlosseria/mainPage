@@ -47,6 +47,11 @@ const popups = [
     overlayId: 'popupOverlay3',
     closeButtonId: 'iClosePopup3',
   },
+  {
+    showButtonId: 'iShowPopup4',
+    overlayId: 'popupOverlay4',
+    closeButtonId: 'iClosePopup4',
+  },
 ];
 
 const Ids = [
@@ -61,6 +66,10 @@ const Ids = [
   {
     IdJ: "iDefined3j", // ID des Ja-Buttons
     IdN: "iDefined3n", // ID des Nein-Buttons
+  },
+  {
+    IdJ: "iDefined4j", // ID des Ja-Buttons
+    IdN: "iDefined4n", // ID des Nein-Buttons
   }
 ];
 
@@ -77,24 +86,28 @@ let perspective;
 const productConfigurations = [
   { ids: ["iDefined1j", "iDefined1n"], parameters: [120, 110, 50, 50, 50, 20, 20, 1, 0 , 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, "true"]},
   { ids: ["iDefined2j", "iDefined2n"], parameters: [80, 180, 90, 40, 90, 30, 30, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 , 0, 10, 5, "true"] },
-  { ids: ["iDefined3j", "iDefined3n"], parameters: [200,50, 150,100,25,25,25,1,1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,"false"] }
+  { ids: ["iDefined3j", "iDefined3n"], parameters: [200,50, 150,100,25,25,25,1,1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,"false"] },
+  { ids: ["iDefined4j", "iDefined4n"], parameters: [40,120,30,20,50,0,20,1,0,1,1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,0,5,5,"false"] }
 ];
+
 
 //Accesoires setzen
   //Produkte 1
   updateAccessoryBasedOnCondition("iDefined1j", "1", 4, 20);
   updateAccessoryBasedOnCondition("iDefined1j", "3", 4, 20);
 
-  //Produkte 1
+  //Produkte 2
   updateAccessoryBasedOnCondition("iDefined2j", "1", 4, 30);
   updateAccessoryBasedOnCondition("iDefined2j", "3", 4, 30);
 
-  //Produkte 1
+  //Produkte 3
   updateAccessoryBasedOnCondition("iDefined3j", "3", 4, 30);
   updateAccessoryBasedOnCondition("iDefined3j", "4", 4, 40);
   updateAccessoryBasedOnCondition("iDefined3j", "5", 4, 40);
 
-
+  //Produkte 4
+  updateAccessoryBasedOnCondition("iDefined4j", "1", 4, 20);
+  updateAccessoryBasedOnCondition("iDefined4j", "3", 4, 20);
 
 function getData(){
 width = localStorage.getItem("iWidth");
