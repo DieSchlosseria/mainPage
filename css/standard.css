@@ -26,18 +26,16 @@ overflow-x: hidden;
 
 
 .cBody{
-  width: 100%;
-  min-width: 600px;
+  width: 100vw;
+  height: 100vh;
+  top: 120px;
   position: absolute;
-  background: url("../images/backrounds/mountainSun.jpg") center/cover no-repeat;
+  background: url("../images/backrounds/test3.png") center/cover no-repeat;
   background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
-  background-size: cover; 
+  background-size: cover;
   margin: 0px;
-  top: 120px;
-  min-height: 1150px;
   z-index: -3; /* Niedrigerer Wert als das andere Element */
-  flex-wrap: wrap;
 }
 
 .cBody2{

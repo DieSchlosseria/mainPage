@@ -1,10 +1,12 @@
 .cProducts {
     min-height: calc(100vh - 120px) ;
-    margin: 50px;
+    max-height: 900px;
+    margin: 30px;
     display: flex;
     flex-wrap: wrap; /* WICHTIG für Umbruch */
     gap: 20px;
     justify-content: left;
+    overflow: auto;
 }
 
 .cContent{
@@ -15,10 +17,10 @@
   }
   
   .cExampleProduct {
-    top: 182px;
+    top: 100px;
     left: 40px;
-    width: 500px;
-    height: 270px;
+    width: auto;
+    height: auto;
     display: flex; 
     background-color:rgb(211, 211, 211, 0.8);
     flex-direction: row; 
@@ -26,47 +28,52 @@
     border-width: 3px;
     border-style: solid;
     border-radius: 5px;
+    padding: 0px 10px 0px 5px;
   }
   
   .cDifned1{
     top: 0px;
     left: 0px;
-    width:150px;
-    height:250px;
+    width: 350px;
+    height: 350px;
     cursor: pointer;
     background: url("../images/products/Sider.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     margin: 5px 10px 10px 10px;
-    padding-left: 10px 10px 10px 10px;
+    padding-left: 5px;
     border-style: solid;
     border-color: black;
     border-width: 3px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
   
   
   .cDifned2{
     top: 0px;
     left: 0px;
-    width:150px;
-    height:250px;
+    width: 350px;
+    height: 350px;
     cursor: pointer;
     background: url("../images/products/Tisch.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     margin: 5px 10px 10px 10px;
-    padding-left: 10px 10px 10px 10px;
+    padding-left: 10px;
     border-style: solid;
     border-color: black;
     border-width: 3px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
   
   
   .cDifned3{
-    width:150px;
-    height:250px;
+    width: 350px;
+    height: 350px;
     cursor: pointer;
     background: url("../images/products/Gaderobe.png");
     background-repeat: no-repeat;
@@ -77,6 +84,25 @@
     border-style: solid;
     border-color: black;
     border-width: 3px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+
+  .cDifned4{
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+    background: url("../images/products/Schuhherr.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 5px 10px 10px 10px;
+    padding-left: 10px 10px 10px 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
   
   .cDifned1:hover {
@@ -94,3 +120,7 @@
     z-index: 1;
   }
   
+  .cDifned4:hover {
+    border-width: 5px;
+    z-index: 1;
+  }
