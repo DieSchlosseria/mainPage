@@ -79,7 +79,7 @@ const scene = new THREE.Scene();
 
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.05, 400); //wenn Hilfslinie ausgeblendet opacity = 0
-camera.position.set(150, 150, 150);
+camera.position.set(0, 0, 200);
 camera.lookAt(0, 0, 0);
 
 const renderer = new THREE.WebGLRenderer({ 
@@ -88,7 +88,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 scene.background = null; // Hintergrund auf transparent setzen
-renderer.setClearColor(new THREE.Color(0xf4f4f4), 0.8);
+renderer.setClearColor(new THREE.Color(0xf4f4f4), 0.0); //Backround mit 0.0 komplett auf Transparent gesetzt
 
 const container = document.getElementById("canvas-container-3d");
 container.appendChild(renderer.domElement);
