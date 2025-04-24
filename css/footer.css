@@ -8,7 +8,6 @@ footer{
   flex-direction: column;
   display: flex;
   justify-content: space-between; /* Links, Mitte und rechts werden verteilt */
-
   height: 430px;
   color: white;
   min-width: 600px;
@@ -16,8 +15,6 @@ footer{
   flex-wrap: wrap;
   margin-top: 90px;
 }
- 
- 
  
  .cFooter{
     display: flex;

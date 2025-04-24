@@ -30,7 +30,7 @@ overflow-x: hidden;
   height: 100vh;
   top: 120px;
   position: absolute;
-  background: url("../images/backrounds/test3.png") center/cover no-repeat;
+  background: url("../images/backrounds/tools2.png") center/cover no-repeat;
   background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
   background-size: cover;
@@ -57,12 +57,27 @@ height: 100vh;
   height: 100vh;
   top: 120px;
   position: absolute;
-  background: url("../images/backrounds/tools2.png") center/cover no-repeat;
+  background: url("../images/backrounds/ToolsLight.png") center/cover no-repeat;
   background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
   background-size: cover;
   margin: 0px;
   z-index: -3; /* Niedrigerer Wert als das andere Element */
+  margin-bottom: 90px;
+}
+
+.c3DBody{
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  position: absolute;
+  background: url("../images/backrounds/backround3D.png") center/cover no-repeat;
+  background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
+  background-position: center center; /* Zentriert das Bild */
+  background-size: cover;
+  margin: 0px;
+  z-index: -3; /* Niedrigerer Wert als das andere Element */
+  margin-bottom: 90px;
 }
 
 header {
