@@ -30,7 +30,7 @@ overflow-x: hidden;
   height: 100vh;
   top: 120px;
   position: absolute;
-  background: url("../images/backrounds/tools2.png") center/cover no-repeat;
+  background: url("../images/backrounds/creatorBackround.png") center/cover no-repeat;
   background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
   background-size: cover;
@@ -57,7 +57,7 @@ height: 100vh;
   height: 100vh;
   top: 120px;
   position: absolute;
-  background: url("../images/backrounds/ToolsLight.png") center/cover no-repeat;
+  background: url("../images/backrounds/creatorBackround.png") center/cover no-repeat;
   background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
   background-size: cover;
@@ -71,7 +71,7 @@ height: 100vh;
   height: 100vh;
   top: 0px;
   position: absolute;
-  background: url("../images/backrounds/backround3D.png") center/cover no-repeat;
+  background: url("../images/backrounds/backround3D_1.png") center/cover no-repeat;
   background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
   background-size: cover;
