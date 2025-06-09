@@ -30,12 +30,26 @@ overflow-x: hidden;
   height: 100vh;
   top: 120px;
   position: absolute;
-  background: url("../images/backrounds/creatorBackround.png") center/cover no-repeat;
-  background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
+  background: url("../images/backrounds/creatorBackround.png");
+  background-repeat: repeat; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
   background-size: cover;
   margin: 0px;
   z-index: -3; /* Niedrigerer Wert als das andere Element */
+}
+
+.cBody3{
+  width: 100vw;
+  height: 100vh;
+  top: 120px;
+  position: absolute;
+  background: url("../images/backrounds/creatorBackround.png");
+  background-repeat: repeat; /* Verhindert Wiederholung des Bildes */
+  background-position: center center; /* Zentriert das Bild */
+  background-size: cover;
+  margin: 0px;
+  z-index: -3; /* Niedrigerer Wert als das andere Element */
+  margin-bottom: 90px;
 }
 
 .cBody2{
@@ -52,19 +66,7 @@ height: 100vh;
   flex-wrap: wrap;
 }
 
-.cBody3{
-  width: 100vw;
-  height: 100vh;
-  top: 120px;
-  position: absolute;
-  background: url("../images/backrounds/creatorBackround.png") center/cover no-repeat;
-  background-repeat: repeat-y; /* Verhindert Wiederholung des Bildes */
-  background-position: center center; /* Zentriert das Bild */
-  background-size: cover;
-  margin: 0px;
-  z-index: -3; /* Niedrigerer Wert als das andere Element */
-  margin-bottom: 90px;
-}
+
 
 .c3DBody{
   width: 100vw;
@@ -252,7 +254,7 @@ output{
   textarea{
   width: 350px ;
   height: 80px;
-  background-color: gray;
+  background-color: rgb(247, 245, 245);
   font-size: 17px;
   font-style: italic;
   font-weight: 900;
@@ -332,18 +334,7 @@ input[type="range"]:focus::-moz-range-thumb{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.cIndexButton {
+.cIndexButton *   { 
   appearance: none;
   background-color: transparent;
   border: 2px solid #1A1A1A;
@@ -371,18 +362,18 @@ input[type="range"]:focus::-moz-range-thumb{
   will-change: transform;
   }
   
-  .cIndexButton:disabled {
+  .cIndexButton:disabled *{
   pointer-events: none;
   }
   
-  .cIndexButton:hover {
-  color: #fff;
+  .cIndexButton:hover *  {
+  color: #fff !important;
   background-color: #1A1A1A;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
   }
   
-  .cIndexButton:active {
+  .cIndexButton:active * {
   box-shadow: none;
   transform: translateY(0);
   }

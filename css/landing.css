@@ -12,8 +12,8 @@
 .slider-container {
     position: relative;
     display: flex;
-    width: 40%;
-    min-width: 350px;
+    width: 30%;
+    min-width: 200px;
     height: 500px;
     overflow: hidden;
     background-color:rgb(211, 211, 211, 0.3);

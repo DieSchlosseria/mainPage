@@ -47,3 +47,13 @@ flex-wrap: wrap;
     border-radius: 10px;
     font-weight: 600;
   }
+
+
+    #message {
+      background-color:rgb(211, 211, 211, 0.2) !important;
+      min-width: 400px;
+      min-height: 100px;
+      text-align: center ;
+      border-color: lightgray;
+      margin: 10px;
+    }
