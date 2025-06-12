@@ -1,0 +1,23 @@
+.cBodyAgb{
+    width: 100vw;
+    height: auto;
+    top: 120px;
+    min-height: 500px;
+    padding-left: 20px;
+    background-color: #3B3B3B;
+    color: #fff;
+  }
+
+  .cContext{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+  }
+
+  .cAgbs {
+color:  white !important ;
+
+  }
