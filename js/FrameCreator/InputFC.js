@@ -59,10 +59,10 @@ let TotalFrame = 0;
 let TotalWood = 0;
 
 //KONSTANTEN
-const PricePerMeter = 8; //Preis pro Meter bei einem 20mm Quadratrohr
-const PricePerPeace = 10; //Für ABschnitt zusammenschweißen usw.
-const PriceDelivery = 30; // Versand etc.
-const PriceWood = 100; //Price pro Quadratmeter
+const PricePerMeter = 12; //Preis pro Meter bei einem 20mm Quadratrohr
+const PricePerPeace = 15; //Für ABschnitt zusammenschweißen usw.
+const PriceDelivery = 35; // Versand etc.
+const PriceWood = 210; //Price pro Quadratmeter
 
 //______________________TEST_________________________
 
