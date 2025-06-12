@@ -97,10 +97,13 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 scene.background = null; // Hintergrund auf transparent setzen
-renderer.setClearColor(new THREE.Color(0xf4f4f4), 0.8);
+renderer.setClearColor(new THREE.Color(0xd3d3d3), 0.7);
 
 const container = document.getElementById("canvas-container");
 container.appendChild(renderer.domElement);
+
+const canvasRadius = renderer.domElement;
+canvasRadius.style.borderRadius = '16px';
 
 function updateRendererSize() {
     renderer.setSize(container.clientWidth, container.clientHeight);
