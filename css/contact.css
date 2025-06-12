@@ -13,12 +13,12 @@
         width: 500px;
         height: 600px;
         padding: 20px 20px 20px 20px;
-        background-color:rgb(211, 211, 211, 0.8);
+        background-color:rgb(211, 211, 211, 0.7);
         font-size: 18px;
         border-color: black;
         border-width: 3px;
-        border-style: solid;
-        border-radius: 5px;
+        border-style: none;
+        border-radius: 16px;
         justify-content: flex-start;
         align-items: flex-start;
         }

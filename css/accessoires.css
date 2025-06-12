@@ -10,13 +10,28 @@
     border-radius: 5px; /* Abgerundete Ecken */
     box-sizing: border-box; /* Box-Modell für korrekte Brechnung */
     opacity: 0.8;
-    background-color:rgb(211, 211, 211, 0.8);
+    background-color:rgb(211, 211, 211, 0.7);
     }
 
-    .cdropdown{
-      background-color:rgb(211, 211, 211, 0.8) !important ;
-    }
+
   
+
+    #iDropdownMenu {
+    background-color: rgba(211, 211, 211, 0.0) !important;
+    border-radius: 16px;
+    padding: 1em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    }
+
+    #iDropdownMenu a {
+    display: block;
+    padding: 0.5em;
+    color: black;
+    text-decoration: none;
+    }
   
     input[type="number"] {
       max-width: 500px; /* Maximale Breite */
@@ -81,11 +96,11 @@
       padding: 0px 10px 0px 10px;
       float: left;
       margin-left: 0px;
-      background-color:rgb(211, 211, 211, 0.8);
+      background-color:rgb(211, 211, 211, 0.7);
       border-color: black;
       border-width: 3px;
-      border-style: solid;
-      border-radius: 5px;
+      border-style: none;
+      border-radius: 16px;
       }
   
       .imgFix {

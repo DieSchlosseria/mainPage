@@ -15,10 +15,10 @@
     display: block;
     border-color: black;
     border-width: 3px;
-    border-style: solid;
-    border-radius: 5px;
+    border-style: none;
+    border-radius: 16px;
 
     align-items: center;
     justify-content: center;
-    background-color:rgb(211, 211, 211, 0.8);
+    background-color:rgb(211, 211, 211, 0.7);
     }
