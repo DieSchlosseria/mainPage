@@ -75,7 +75,7 @@
     .cZubehoerOwn{
       width: 300px;
       height: auto;
-      min-height: 410px;
+      height: 420px;
       display: flex;
       flex-direction: column;
       padding: 0px 10px 0px 10px;
