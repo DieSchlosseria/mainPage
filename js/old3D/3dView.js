@@ -128,6 +128,14 @@ const woodGroup = new THREE.Group();
 scene.add(woodGroup);
 woodGroup.scale.set(0.7, 0.7, 0.7);
 
+scene.add(cubeGroup);
+scene.add(woodGroup);
+
+//Möbel nach unten schieben (sonst schwebt Möbel im Raumm)
+let shiftY = - (200 - tHeight + thick) / 4;
+cubeGroup.position.y = shiftY;
+woodGroup.position.y = shiftY;
+
 // --- Create Square Pipes ---
 function createSquarePipe(x1, y1, z1, x2, y2, z2, isActive, index) {
     const lengthVal = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2 + (z2 - z1) ** 2) + Thickness;
