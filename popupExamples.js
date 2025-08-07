@@ -84,12 +84,11 @@ let perspective;
 
 //Konfiguration Produktbeispiele  //siehe funktion productexamples
 const productConfigurations = [
-  { ids: ["iDefined1j", "iDefined1n"], parameters: [120, 110, 50, 50, 50, 20, 20, 1, 0 , 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, "true"]},
+  { ids: ["iDefined1j", "iDefined1n"], parameters: [120, 110, 50, 50, 50, 20, 20, 1, 1 , 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, "true"]},
   { ids: ["iDefined2j", "iDefined2n"], parameters: [80, 180, 90, 40, 90, 30, 30, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0 , 0, 10, 5, "true"] },
-  { ids: ["iDefined3j", "iDefined3n"], parameters: [200,50, 150,100,25,25,25,1,1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,"false"] },
-  { ids: ["iDefined4j", "iDefined4n"], parameters: [40,120,30,20,50,0,20,1,0,1,1,0,1,0,1,1,1,1,1,1,0,0,0,0,0,0,5,5,"false"] }
+  { ids: ["iDefined3j", "iDefined3n"], parameters: [200,50, 150,100,25,25,25,     1, 1,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,"false"] },
+  { ids: ["iDefined4j", "iDefined4n"], parameters: [40,30,120,20,15,60,20,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,0,0,1,5,5,"false"] }
 ];
-
 
 //Accesoires setzen
   //Produkte 1
