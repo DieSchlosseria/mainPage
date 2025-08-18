@@ -24,18 +24,16 @@ left: 0px;
 overflow-x: hidden;
 }
 
-
-.cBody{
-  width: 100vw;
-  height: 100vh;
-  top: 120px;
-  position: absolute;
-  background: url("../images/backrounds/creatorBackround.png");
-  background-repeat: repeat; /* Verhindert Wiederholung des Bildes */
-  background-position: center center; /* Zentriert das Bild */
+.cBody {
+  position: fixed; /* statt absolute, damit es beim Scrollen bleibt */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/backrounds/mountainSun.jpg") no-repeat center center;
   background-size: cover;
-  margin: 0px;
-  z-index: -3; /* Niedrigerer Wert als das andere Element */
+  margin: 0;
+  z-index: -3;
 }
 
 .cBody3{
@@ -43,7 +41,7 @@ overflow-x: hidden;
   height: 100vh;
   top: 120px;
   position: absolute;
-  background: url("../images/backrounds/creatorBackround.png");
+  background: url("../images/backrounds/mountainSun.jpg");
   background-repeat: repeat; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
   background-size: cover;
@@ -70,7 +68,7 @@ height: 100vh;
 
 .c3DBody{
   width: 100vw;
-  height: 100vh;
+  height: 120%;
   top: 0px;
   position: absolute;
   background: url("../images/backrounds/backround3D_1.png") center/cover no-repeat;
