@@ -105,6 +105,7 @@ container.appendChild(renderer.domElement);
 const canvasRadius = renderer.domElement;
 canvasRadius.style.borderRadius = '16px';
 
+
 function updateRendererSize() {
     renderer.setSize(container.clientWidth, container.clientHeight);
     camera.aspect = container.clientWidth / container.clientHeight;
