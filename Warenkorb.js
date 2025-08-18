@@ -58,9 +58,7 @@ const displayConfigurations = () => {
 
       paragraph.innerHTML = `
         Möbelstück ${index + 1}:<br>
-        Breite: ${config.width},<br>
-        Tiefe: ${config.deepth},<br>
-        Höhe: ${config.hight},<br>
+        B/T/H: ${config.width}, ${config.deepth}, ${config.hight},<br>
         Preis: ${parseFloat(config.total).toFixed(2)} €<br>
         Versand: ${config.versand} €,<br>
       `;

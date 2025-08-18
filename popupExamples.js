@@ -28,7 +28,7 @@ function loadFromLocalStorage() {    //Wenn accessories noch nicht vorhanden im 
       document.getElementById(accessory.outputId).textContent = `${savedData[accessory.id].totalPrice} €`;
     }
   });
-}
+}   
 
 // VARIABLEN
 const popups = [
