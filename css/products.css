@@ -24,7 +24,7 @@
     height: auto;
     max-height: 380px ;
     display: flex; 
-    background-color:rgb(211, 211, 211, 0.7);
+    background-color:rgb(211, 211, 211, 0.85);
     flex-direction: row; 
 
     border-width: 3px;

@@ -30,7 +30,7 @@ overflow-x: hidden;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/backrounds/mountainSun.jpg") no-repeat center center;
+  background: url("../images/backrounds/BackroundMain.png") no-repeat center center;
   background-size: cover;
   margin: 0;
   z-index: -3;
@@ -41,7 +41,7 @@ overflow-x: hidden;
   height: 100vh;
   top: 120px;
   position: absolute;
-  background: url("../images/backrounds/mountainSun.jpg");
+  background: url("../images/backrounds/BackroundMain.png");
   background-repeat: repeat; /* Verhindert Wiederholung des Bildes */
   background-position: center center; /* Zentriert das Bild */
   background-size: cover;
