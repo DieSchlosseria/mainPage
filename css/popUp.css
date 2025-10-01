@@ -15,7 +15,7 @@
 position: relative;
 color: #000;
 padding-top: 50px;
-font-size: 40px;
+font-size: 30px;
 font-style: normal;
 font-weight: 900;
 line-height: normal;
@@ -46,14 +46,16 @@ align-items: center;
 position: absolute;
 top: 2px; 
 right: 2px; 
-font-size: 20px; 
+font-size: 15px; 
 font-style:inherit;
 font-weight: 900;
 line-height: normal;
 text-align: center; 
 border: 8px 8px 8px 8px;
 cursor: pointer; 
-min-width: 50px;
+min-width: 40px;
+width: 8px;
+height: 8px;
 margin: 5px;
 }
 
