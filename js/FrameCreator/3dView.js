@@ -530,7 +530,21 @@ function displayed(ButtonList, id, show) {
     }
   }
 
+function captureScene() {
+    // Rendere aktuelle Szene
+    renderer.render(scene, camera);
 
+    // Hole Bild als DataURL (PNG)
+    const dataURL = renderer.domElement.toDataURL("image/png");
+
+    // Download-Link erzeugen
+    const link = document.createElement("a");
+    link.href = dataURL;
+    link.download = "capture.png"; // Dateiname
+    link.click();
+}
+
+document.getElementById("captureBtn").addEventListener("click", captureScene);
 
 
 
