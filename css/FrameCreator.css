@@ -226,6 +226,27 @@ canvas {
           .cTrash:hover{
             opacity: 1.0;
           }
+
+          .cCapture{       
+            left: 80px;
+            top: 518px;
+            width: 65px;
+            height: 65px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 0.7;
+            position: absolute;
+            margin: 10px 10px 10px 10px;
+            border: none;
+            cursor: pointer;
+            z-index: 5;
+          }
+          .cCapture:hover{
+            opacity: 1.0;
+          }
+
+
   
         
   
